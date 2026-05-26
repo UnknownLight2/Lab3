@@ -1,0 +1,99 @@
+INFO: [COSIM-47] Using XSIM for RTL simulation.
+INFO: [COSIM-14] Instrumenting C test bench ...
+   Build using "C:/XilinxVivado/Vitis_HLS/2024.1/vcxx/libexec/clang++"
+   Compiling matrix_mult_test.cpp_pre.cpp.tb.cpp
+   Compiling matrix_mult.cpp_pre.cpp.tb.cpp
+   Compiling apatb_matrix_mult.cpp
+   Compiling apatb_matrix_mult_ir.ll
+   Generating cosim.tv.exe
+INFO: [COSIM-302] Starting C TB testing ... 
+INFO: [COSIM-333] Generating C post check test bench ...
+INFO: [COSIM-12] Generating RTL test bench ...
+INFO: [COSIM-1] *** C/RTL co-simulation file generation completed. ***
+INFO: [COSIM-322] Starting VHDL simulation. 
+INFO: [COSIM-15] Starting XSIM ...
+INFO: [COSIM-316] Starting C post checking ...
+Test passed!
+
+C:\XinlinxHLS\tutor3\solution1\sim\vhdl>set PATH= 
+
+C:\XinlinxHLS\tutor3\solution1\sim\vhdl>call C:/XilinxVivado/Vivado/2024.1/bin/xelab xil_defaultlib.apatb_matrix_mult_top glbl -Oenable_linking_all_libraries  -prj matrix_mult.prj -L smartconnect_v1_0 -L axi_protocol_checker_v1_1_12 -L axi_protocol_checker_v1_1_13 -L axis_protocol_checker_v1_1_11 -L axis_protocol_checker_v1_1_12 -L xil_defaultlib -L unisims -L unisims_ver -L xpm  -L floating_point_v7_0_23 -L floating_point_v7_1_18 --lib "ieee_proposed=./ieee_proposed" -s matrix_mult  
+Vivado Simulator v2024.1
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/XilinxVivado/Vivado/2024.1/bin/unwrapped/win64.o/xelab.exe xil_defaultlib.apatb_matrix_mult_top glbl -Oenable_linking_all_libraries -prj matrix_mult.prj -L smartconnect_v1_0 -L axi_protocol_checker_v1_1_12 -L axi_protocol_checker_v1_1_13 -L axis_protocol_checker_v1_1_11 -L axis_protocol_checker_v1_1_12 -L xil_defaultlib -L unisims -L unisims_ver -L xpm -L floating_point_v7_0_23 -L floating_point_v7_1_18 --lib ieee_proposed=./ieee_proposed -s matrix_mult 
+Multi-threading is on. Using 10 slave threads.
+Determining compilation order of HDL files.
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/XinlinxHLS/tutor3/solution1/sim/vhdl/glbl.v" into library work
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/XinlinxHLS/tutor3/solution1/sim/vhdl/AESL_sim_pkg.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/XinlinxHLS/tutor3/solution1/sim/vhdl/AESL_automem_a.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'AESL_automem_a'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/XinlinxHLS/tutor3/solution1/sim/vhdl/AESL_automem_b.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'AESL_automem_b'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/XinlinxHLS/tutor3/solution1/sim/vhdl/AESL_automem_prod.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'AESL_automem_prod'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/XinlinxHLS/tutor3/solution1/sim/vhdl/matrix_mult.autotb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'apatb_matrix_mult_top'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/XinlinxHLS/tutor3/solution1/sim/vhdl/matrix_mult.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'matrix_mult'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/XinlinxHLS/tutor3/solution1/sim/vhdl/matrix_mult_flow_control_loop_pipe.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'matrix_mult_flow_control_loop_pipe'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/XinlinxHLS/tutor3/solution1/sim/vhdl/matrix_mult_mac_muladd_8s_8s_16ns_16_4_1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'matrix_mult_mac_muladd_8s_8s_16ns_16_4_1_DSP48_0'
+INFO: [VRFC 10-3107] analyzing entity 'matrix_mult_mac_muladd_8s_8s_16ns_16_4_1'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/XinlinxHLS/tutor3/solution1/sim/vhdl/matrix_mult_mac_muladd_8s_8s_16s_16_4_1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'matrix_mult_mac_muladd_8s_8s_16s_16_4_1_DSP48_0'
+INFO: [VRFC 10-3107] analyzing entity 'matrix_mult_mac_muladd_8s_8s_16s_16_4_1'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/XinlinxHLS/tutor3/solution1/sim/vhdl/matrix_mult_mul_8s_8s_16_1_1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'matrix_mult_mul_8s_8s_16_1_1'
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling package ieee.std_logic_textio
+Compiling module work.glbl
+Compiling architecture behav of entity xil_defaultlib.matrix_mult_mul_8s_8s_16_1_1 [\matrix_mult_mul_8s_8s_16_1_1(nu...]
+Compiling architecture behav of entity xil_defaultlib.matrix_mult_mac_muladd_8s_8s_16s_16_4_1_DSP48_0 [matrix_mult_mac_muladd_8s_8s_16s...]
+Compiling architecture arch of entity xil_defaultlib.matrix_mult_mac_muladd_8s_8s_16s_16_4_1 [\matrix_mult_mac_muladd_8s_8s_16...]
+Compiling architecture behav of entity xil_defaultlib.matrix_mult_mac_muladd_8s_8s_16ns_16_4_1_DSP48_0 [matrix_mult_mac_muladd_8s_8s_16n...]
+Compiling architecture arch of entity xil_defaultlib.matrix_mult_mac_muladd_8s_8s_16ns_16_4_1 [\matrix_mult_mac_muladd_8s_8s_16...]
+Compiling architecture behav of entity xil_defaultlib.matrix_mult_flow_control_loop_pipe [matrix_mult_flow_control_loop_pi...]
+Compiling architecture behav of entity xil_defaultlib.matrix_mult [matrix_mult_default]
+Compiling architecture behav of entity xil_defaultlib.AESL_automem_a [aesl_automem_a_default]
+Compiling architecture behav of entity xil_defaultlib.AESL_automem_b [aesl_automem_b_default]
+Compiling architecture behav of entity xil_defaultlib.AESL_automem_prod [aesl_automem_prod_default]
+Compiling architecture behav of entity xil_defaultlib.apatb_matrix_mult_top
+Built simulation snapshot matrix_mult
+
+****** xsim v2024.1 (64-bit)
+  **** SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
+  **** IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+  **** SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+  **** Start of session at: Mon May 25 11:21:48 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source xsim.dir/matrix_mult/xsim_script.tcl
+# xsim {matrix_mult} -autoloadwcfg -tclbatch {matrix_mult.tcl}
+Time resolution is 1 ps
+source matrix_mult.tcl
+## run all
+Note: simulation done!
+Time: 562500 ps  Iteration: 1  Process: /apatb_matrix_mult_top/generate_sim_done_proc  File: C:/XinlinxHLS/tutor3/solution1/sim/vhdl/matrix_mult.autotb.vhd
+Failure: NORMAL EXIT (note: failure is to force the simulator to stop)
+Time: 562500 ps  Iteration: 1  Process: /apatb_matrix_mult_top/generate_sim_done_proc  File: C:/XinlinxHLS/tutor3/solution1/sim/vhdl/matrix_mult.autotb.vhd
+$finish called at time : 562500 ps
+## quit
+INFO: [Common 17-206] Exiting xsim at Mon May 25 11:21:51 2026...
+Test passed!
+INFO: [COSIM-1000] *** C/RTL co-simulation finished: PASS ***
+INFO: [COSIM-211] II is measurable only when transaction number is greater than 1 in RTL simulation. Otherwise, they will be marked as all NA. If user wants to calculate them, please make sure there are at least 2 transactions in RTL simulation.

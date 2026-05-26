@@ -1,0 +1,35 @@
+#-----------------------------------------------------------
+# xsim v2024.1 (64-bit)
+# SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
+# IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+# SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+# Start of session at: Mon May 25 11:21:48 2026
+# Process ID: 10828
+# Current directory: C:/XinlinxHLS/tutor3/solution1/sim/vhdl
+# Command line: xsim.exe -mode tcl -source {xsim.dir/matrix_mult/xsim_script.tcl}
+# Log file: C:/XinlinxHLS/tutor3/solution1/sim/vhdl/xsim.log
+# Journal file: C:/XinlinxHLS/tutor3/solution1/sim/vhdl\xsim.jou
+# Running On        :Ghav30
+# Platform          :Windows Server 2016 or Windows 10
+# Operating System  :26200
+# Processor Detail  :AMD Ryzen 5 7430U with Radeon Graphics         
+# CPU Frequency     :2296 MHz
+# CPU Physical cores:6
+# CPU Logical cores :12
+# Host memory       :14861 MB
+# Swap memory       :7789 MB
+# Total Virtual     :22651 MB
+# Available Virtual :813 MB
+#-----------------------------------------------------------
+source xsim.dir/matrix_mult/xsim_script.tcl
+# xsim {matrix_mult} -autoloadwcfg -tclbatch {matrix_mult.tcl}
+Time resolution is 1 ps
+source matrix_mult.tcl
+## run all
+Note: simulation done!
+Time: 562500 ps  Iteration: 1  Process: /apatb_matrix_mult_top/generate_sim_done_proc  File: C:/XinlinxHLS/tutor3/solution1/sim/vhdl/matrix_mult.autotb.vhd
+Failure: NORMAL EXIT (note: failure is to force the simulator to stop)
+Time: 562500 ps  Iteration: 1  Process: /apatb_matrix_mult_top/generate_sim_done_proc  File: C:/XinlinxHLS/tutor3/solution1/sim/vhdl/matrix_mult.autotb.vhd
+$finish called at time : 562500 ps
+## quit
+INFO: [Common 17-206] Exiting xsim at Mon May 25 11:21:51 2026...

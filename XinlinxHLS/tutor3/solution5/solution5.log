@@ -1,0 +1,176 @@
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2024.1 (64-bit)
+Tool Version Limit: 2024.05
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 5ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7k70t-fbv676-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_cosim -rtl=vhdl
+INFO: [HLS 200-1464] Running solution command: config_cosim -tool=xsim
+INFO: [HLS 200-1510] Running: set_part xc7k70tfbv676-1 
+INFO: [HLS 200-1510] Running: create_clock -period 5 -name default 
+INFO: [HLS 200-1510] Running: config_cosim -rtl vhdl -tool xsim 
+INFO: [HLS 200-1510] Running: source ./tutor3/solution5/directives.tcl
+INFO: [HLS 200-1510] Running: set_directive_top -name matrix_mult matrix_mult 
+WARNING: [HLS 200-484] The 'set_directive_top -name' command is deprecated and will be removed in a future release.
+WARNING: [HLS 200-484] The 'set_directive_top -location' command is deprecated and will be removed in a future release.
+INFO: [HLS 200-1510] Running: set_directive_array_reshape -type complete -dim 2 matrix_mult a 
+INFO: [HLS 200-1510] Running: set_directive_array_reshape -type complete -dim 1 matrix_mult b 
+INFO: [HLS 200-1510] Running: set_directive_pipeline matrix_mult 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.119 seconds; current allocated memory: 198.543 MB.
+INFO: [HLS 200-10] Analyzing design file 'matrix_mult.cpp' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 1.55 seconds; current allocated memory: 200.141 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 200-1995] There were 57 instructions in the design after the 'Compile/Link' phase of compilation. See the Design Size Report for more details: C:/XinlinxHLS/tutor3/solution5/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 1,159 instructions in the design after the 'Unroll/Inline (step 1)' phase of compilation. See the Design Size Report for more details: C:/XinlinxHLS/tutor3/solution5/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 426 instructions in the design after the 'Unroll/Inline (step 2)' phase of compilation. See the Design Size Report for more details: C:/XinlinxHLS/tutor3/solution5/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 426 instructions in the design after the 'Unroll/Inline (step 3)' phase of compilation. See the Design Size Report for more details: C:/XinlinxHLS/tutor3/solution5/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 426 instructions in the design after the 'Unroll/Inline (step 4)' phase of compilation. See the Design Size Report for more details: C:/XinlinxHLS/tutor3/solution5/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 426 instructions in the design after the 'Array/Struct (step 1)' phase of compilation. See the Design Size Report for more details: C:/XinlinxHLS/tutor3/solution5/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 426 instructions in the design after the 'Array/Struct (step 2)' phase of compilation. See the Design Size Report for more details: C:/XinlinxHLS/tutor3/solution5/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 426 instructions in the design after the 'Array/Struct (step 3)' phase of compilation. See the Design Size Report for more details: C:/XinlinxHLS/tutor3/solution5/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 476 instructions in the design after the 'Array/Struct (step 4)' phase of compilation. See the Design Size Report for more details: C:/XinlinxHLS/tutor3/solution5/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 396 instructions in the design after the 'Array/Struct (step 5)' phase of compilation. See the Design Size Report for more details: C:/XinlinxHLS/tutor3/solution5/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 396 instructions in the design after the 'Performance (step 1)' phase of compilation. See the Design Size Report for more details: C:/XinlinxHLS/tutor3/solution5/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 396 instructions in the design after the 'Performance (step 2)' phase of compilation. See the Design Size Report for more details: C:/XinlinxHLS/tutor3/solution5/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 396 instructions in the design after the 'Performance (step 3)' phase of compilation. See the Design Size Report for more details: C:/XinlinxHLS/tutor3/solution5/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 396 instructions in the design after the 'Performance (step 4)' phase of compilation. See the Design Size Report for more details: C:/XinlinxHLS/tutor3/solution5/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 402 instructions in the design after the 'HW Transforms (step 1)' phase of compilation. See the Design Size Report for more details: C:/XinlinxHLS/tutor3/solution5/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 404 instructions in the design after the 'HW Transforms (step 2)' phase of compilation. See the Design Size Report for more details: C:/XinlinxHLS/tutor3/solution5/syn/report/csynth_design_size.rpt
+INFO: [HLS 214-291] Loop 'Row' is marked as complete unroll implied by the pipeline pragma (matrix_mult.cpp:10:9)
+INFO: [HLS 214-291] Loop 'Col' is marked as complete unroll implied by the pipeline pragma (matrix_mult.cpp:12:12)
+INFO: [HLS 214-291] Loop 'Product' is marked as complete unroll implied by the pipeline pragma (matrix_mult.cpp:15:19)
+INFO: [HLS 214-186] Unrolling loop 'Row' (matrix_mult.cpp:10:9) in function 'matrix_mult' completely with a factor of 5 (matrix_mult.cpp:8:0)
+INFO: [HLS 214-186] Unrolling loop 'Col' (matrix_mult.cpp:12:12) in function 'matrix_mult' completely with a factor of 5 (matrix_mult.cpp:8:0)
+INFO: [HLS 214-186] Unrolling loop 'Product' (matrix_mult.cpp:15:19) in function 'matrix_mult' completely with a factor of 5 (matrix_mult.cpp:8:0)
+INFO: [HLS 214-248] Applying array_reshape to 'a': Complete reshaping on dimension 2. (matrix_mult.cpp:8:0)
+INFO: [HLS 214-248] Applying array_reshape to 'b': Complete reshaping on dimension 1. (matrix_mult.cpp:8:0)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 8.157 seconds; current allocated memory: 202.441 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.004 seconds; current allocated memory: 202.441 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.046 seconds; current allocated memory: 206.570 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.03 seconds; current allocated memory: 208.359 MB.
+INFO: [XFORM 203-11] Balancing expressions in function 'matrix_mult' (matrix_mult.cpp:16:1)...100 expression(s) balanced.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.081 seconds; current allocated memory: 229.695 MB.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.071 seconds; current allocated memory: 229.715 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'matrix_mult' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'matrix_mult' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln16_98) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln16_97) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln16_96) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln16_94) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln16_93) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln16_92) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln16_90) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln16_89) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln16_88) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln16_86) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln16_85) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln16_84) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln16_82) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln16_81) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln16_80) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln16_78) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln16_77) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln16_76) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln16_74) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln16_73) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln16_72) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln16_70) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln16_69) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln16_68) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln16_66) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln16_65) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln16_64) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln16_62) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln16_61) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln16_60) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln16_58) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln16_57) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln16_56) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln16_54) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln16_53) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln16_52) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln16_50) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln16_49) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln16_48) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln16_46) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln16_45) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln16_44) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln16_42) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln16_41) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln16_40) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln16_38) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln16_37) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln16_36) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln16_34) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln16_33) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln16_32) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln16_30) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln16_29) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln16_28) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln16_26) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln16_25) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln16_24) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln16_22) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln16_21) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln16_20) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln16_18) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln16_17) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln16_16) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln16_14) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln16_13) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln16_12) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln16_10) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln16_9) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln16_8) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln16_6) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln16_5) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln16_4) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln16_2) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln16_1) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP latency (root=add_ln16) to 3 in order to utilize available DSP registers.
+INFO: [SCHED 204-61] Pipelining function 'matrix_mult'.
+WARNING: [HLS 200-885] The II Violation in module 'matrix_mult' (function 'matrix_mult'): Unable to schedule 'load' operation 40 bit ('b_load_1', matrix_mult.cpp:16) on array 'b' due to limited memory ports (II = 1). Please consider using a memory core with more ports or partitioning the array 'b'.
+WARNING: [HLS 200-885] The II Violation in module 'matrix_mult' (function 'matrix_mult'): Unable to schedule 'load' operation 40 bit ('b_load_3', matrix_mult.cpp:16) on array 'b' due to limited memory ports (II = 2). Please consider using a memory core with more ports or partitioning the array 'b'.
+WARNING: [HLS 200-885] The II Violation in module 'matrix_mult' (function 'matrix_mult'): Unable to schedule 'store' operation 0 bit ('prod_addr_5_write_ln16', matrix_mult.cpp:16) of variable 'add_ln16_23', matrix_mult.cpp:16 on array 'prod' due to limited memory ports (II = 3). Please consider using a memory core with more ports or partitioning the array 'prod'.
+WARNING: [HLS 200-885] The II Violation in module 'matrix_mult' (function 'matrix_mult'): Unable to schedule 'store' operation 0 bit ('prod_addr_7_write_ln16', matrix_mult.cpp:16) of variable 'add_ln16_31', matrix_mult.cpp:16 on array 'prod' due to limited memory ports (II = 4). Please consider using a memory core with more ports or partitioning the array 'prod'.
+WARNING: [HLS 200-885] The II Violation in module 'matrix_mult' (function 'matrix_mult'): Unable to schedule 'store' operation 0 bit ('prod_addr_21_write_ln16', matrix_mult.cpp:16) of variable 'add_ln16_87', matrix_mult.cpp:16 on array 'prod' due to limited memory ports (II = 11). Please consider using a memory core with more ports or partitioning the array 'prod'.
+WARNING: [HLS 200-885] The II Violation in module 'matrix_mult' (function 'matrix_mult'): Unable to schedule 'store' operation 0 bit ('prod_addr_23_write_ln16', matrix_mult.cpp:16) of variable 'add_ln16_95', matrix_mult.cpp:16 on array 'prod' due to limited memory ports (II = 12). Please consider using a memory core with more ports or partitioning the array 'prod'.
+INFO: [HLS 200-1470] Pipelining result : Target II = NA, Final II = 13, Depth = 24, function 'matrix_mult'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 2 seconds. CPU system time: 0 seconds. Elapsed time: 3.062 seconds; current allocated memory: 231.039 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.203 seconds; current allocated memory: 232.258 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'matrix_mult' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'matrix_mult/a' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'matrix_mult/b' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'matrix_mult/prod' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'matrix_mult' to 'ap_ctrl_hs'.
+INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'matrix_mult' pipeline 'matrix_mult' pipeline type 'function pipeline'
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_8s_8s_16ns_16_4_1': 25 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_8s_8s_16s_16_4_1': 50 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_8s_8s_16_1_1': 50 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'matrix_mult'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.335 seconds; current allocated memory: 238.387 MB.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 0 seconds. CPU system time: 1 seconds. Elapsed time: 0.688 seconds; current allocated memory: 248.492 MB.
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.601 seconds; current allocated memory: 256.691 MB.
+INFO: [VHDL 208-304] Generating VHDL RTL for matrix_mult.
+INFO: [VLOG 209-307] Generating Verilog RTL for matrix_mult.
+INFO: [HLS 200-789] **** Estimated Fmax: 303.95 MHz
+INFO: [HLS 200-2161] Finished Command csynth_design Elapsed time: 00:00:15; Allocated memory: 58.211 MB.

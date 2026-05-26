@@ -1,0 +1,59 @@
+[
+  {
+    "functionLabel": "",
+    "functionName": "matrix_mult",
+    "id": 0,
+    "ifcond": "",
+    "insert_position": "",
+    "label": "",
+    "pragma": {
+      "name": "TOP",
+      "option": [
+        {
+          "name": "name",
+          "value": "matrix_mult"
+        }
+      ]
+    },
+    "slx": false,
+    "sourceFile": "C:/XinlinxHLS/tutor3/solution2/directives.tcl",
+    "sourceLine": 7,
+    "success": true
+  },
+  {
+    "functionLabel": "",
+    "functionName": "matrix_mult",
+    "id": 1,
+    "ifcond": "",
+    "insert_position": "",
+    "label": "Product",
+    "pragma": {
+      "name": "PIPELINE"
+    },
+    "slx": false,
+    "sourceFile": "C:/XinlinxHLS/tutor3/solution2/directives.tcl",
+    "sourceLine": 8,
+    "success": true
+  },
+  {
+    "functionLabel": "",
+    "functionName": "matrix_mult",
+    "id": 2,
+    "ifcond": "",
+    "insert_position": "",
+    "label": "",
+    "pragma": {
+      "name": "TOP",
+      "option": [
+        {
+          "name": "name",
+          "value": "matrix_mult"
+        }
+      ]
+    },
+    "slx": false,
+    "sourceFile": "C:/XinlinxHLS/tutor3/solution2/csynth.tcl",
+    "sourceLine": 17,
+    "success": true
+  }
+]

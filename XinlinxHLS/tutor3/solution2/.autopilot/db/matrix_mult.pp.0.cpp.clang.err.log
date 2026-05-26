@@ -1,0 +1,10 @@
+C:/XinlinxHLS/tutor3/solution2/csynth.tcl:17:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=top_XLX_SEP_ PragmaContext=directive_XLX_SEP_ PragmaFunction=matrix_mult_XLX_SEP_ PragmaOptions=name=matrix_mult_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLSDIRECTIVE TOP name=matrix_mult
+        ^
+C:/XinlinxHLS/tutor3/solution2/directives.tcl:7:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=top_XLX_SEP_ PragmaContext=directive_XLX_SEP_ PragmaFunction=matrix_mult_XLX_SEP_ PragmaOptions=name=matrix_mult_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLSDIRECTIVE TOP name=matrix_mult
+        ^
+C:/XinlinxHLS/tutor3/solution2/directives.tcl:8:9: warning: HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=directive_XLX_SEP_ PragmaFunction=matrix_mult_XLX_SEP_ PragmaOptions=_XLX_SEP_ [-Wdump-hls-pragmas]
+#pragma HLSDIRECTIVE PIPELINE
+        ^
+3 warnings generated.
